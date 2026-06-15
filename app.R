@@ -309,10 +309,10 @@ server <- function(input, output, session) {
       "  |  Habitat: ",       val(linha, "habitat"), "\n",
       "Origem: ",             val(linha, "origin"),     
       "  |  Endemismo: ",     val(linha, "endemism"),    
-      "Status taxonomico: ",  val(linha, "taxonomicStatus"), "\n",
+      "  |  Status taxonomico: ",  val(linha, "taxonomicStatus"), "\n",
       "Biomas: ",             val(linha, "biome"),        
-      "Estados: ",            val(linha, "states"),       
-      "Tipo de vegetacao: ",  val(linha, "vegetationType"), "\n",
+      "  |  Estados: ",            val(linha, "states"),       
+      "  |  Tipo de vegetacao: ",  val(linha, "vegetationType"), "\n",
       "Nome(s) popular(es): ",val(linha, "vernacularName")
     )
   })
