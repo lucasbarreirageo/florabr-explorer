@@ -204,9 +204,10 @@ server <- function(input, output, session) {
                                 include_subspecies = input$sub,
                                 include_variety    = input$var),
         species = {
-          sel <- d[tolower(d$species) == tolower(termo), , drop = FALSE]
-          if (nrow(sel) == 0)
-            sel <- d[grepl(termo, d$species, ignore.case = TRUE), , drop = FALSE]
+          sel <- d[which(tolower(d$species) == tolower(termo)), , drop = FALSE]
+          if (nrow(sel) == 0) {
+            sel <- d[which(grepl(termo, d$species, ignore.case = TRUE)), , drop = FALSE]
+          }
           sel
         },
         vernacular = tryCatch(
@@ -321,6 +322,8 @@ server <- function(input, output, session) {
   output$sinonimos <- renderDT({
     req(input$especie_sel)
     d <- bf()
+    if (is.na(input$especie_sel) || input$especie_sel == "-") return(NULL)
+    
     s <- tryCatch(
       get_synonym(d, species = input$especie_sel,
                   include_subspecies = input$sub,
