@@ -25,7 +25,7 @@ if (!requireNamespace("shiny", quietly = TRUE)) {
 # Executar a aplicação diretamente do repositório
 shiny::runGitHub(repo = "florabr-explorer", username = "lucasbarreirageo")
 
-
+```
 ## Como Citar
 
 Se esta ferramenta foi útil para o seu fluxo de trabalho, pesquisa ou projeto de conservação, por favor, utilize uma das seguintes formatações para citação:
