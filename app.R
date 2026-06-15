@@ -175,7 +175,7 @@ server <- function(input, output, session) {
                         type         = input$tipo)
       bf(d)
       sprintf("Base carregada: %s registros, %s colunas (versao '%s').",
-              format(nrow(d), big.mark = "."), ncol(d), input$tipo)
+              format(nrow(d), big.mark = ".", decimal.mark = ","), ncol(d), input$tipo)
     }, error = function(e) paste("Erro ao carregar:", conditionMessage(e)))
     status_msg(res)
   })
@@ -237,7 +237,7 @@ server <- function(input, output, session) {
     busca$df  <- out
     busca$msg <- if (is.null(out) || nrow(out) == 0)
       "Nenhum registro encontrado." else
-      sprintf("%s registro(s) encontrado(s).", format(nrow(out), big.mark = "."))
+      sprintf("%s registro(s) encontrado(s).", format(nrow(out), big.mark = ".", decimal.mark = ","))
   })
 
   output$resumo <- renderText(busca$msg)
