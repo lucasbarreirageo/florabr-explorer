@@ -34,7 +34,7 @@ if (!requireNamespace("shiny", quietly = TRUE)) {
 shiny::runGitHub(repo = "florabr-explorer", username = "lucasbarreirageo")
 
 ```
-## Passo a Passo de Utilização
+## Passo a passo de utilização
 
 O aplicativo foi desenhado para processar a base de dados localmente no seu computador, garantindo estabilidade e rapidez nas consultas após a configuração inicial.
 
