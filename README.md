@@ -6,6 +6,14 @@ Ferramenta computacional para acesso rápido e exportação de registros da Flor
 
 Um aplicativo interativo construído em R (Shiny) para consultar e exportar dados da base da Flora e Funga do Brasil, utilizando o pacote [`florabr`](https://brunomc-oliveira.github.io/florabr/).
 
+## Sobre os Dados e a Tecnologia
+
+**A Flora e Funga do Brasil**
+A plataforma Flora e Funga do Brasil é um marco na botânica mundial e o pilar fundamental para qualquer estratégia de conservação da biodiversidade brasileira. Coordenada pelo Jardim Botânico do Rio de Janeiro (JBRJ), a base consolida décadas de esforço colaborativo de centenas de taxonomistas e especialistas. Ela fornece o alicerce de dados mais robusto e atualizado sobre a diversidade vegetal e fúngica do país, sendo uma fonte primária inestimável para a pesquisa científica e para o desenvolvimento de políticas públicas de proteção ambiental.
+
+**O Pacote florabr**
+Este aplicativo atua como uma interface gráfica construída sobre o pacote R [`florabr`](https://brunomc-oliveira.github.io/florabr/), desenvolvido por W. C. Trindade (2024). O pacote otimizou de forma significativa a maneira como pesquisadores interagem com as bases de dados do JBRJ no ambiente R, permitindo o download ágil, a filtragem e a manipulação de milhares de registros taxonômicos com extrema eficiência computacional.
+
 ## 📌 Funcionalidades
 * **Download e Gerenciamento da Base:** Baixe a versão mais recente dos dados diretamente do Jardim Botânico do Rio de Janeiro.
 * **Busca Flexível:** Consulte espécies, gêneros, famílias ou nomes populares.
