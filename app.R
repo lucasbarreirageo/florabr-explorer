@@ -82,7 +82,10 @@ ui <- fluidPage(
                 placeholder = "ex.: Fabaceae / Mimosa / Mimosa pudica / ipe"),
       div(style = "display:flex; gap:16px;",
         checkboxInput("sub", "Incluir subespecies", FALSE),
-        checkboxInput("var", "Incluir variedades",  FALSE)
+        checkboxInput("var", "Incluir variedades",  FALSE),
+        checkboxInput("endemic", "Apenas endêmicas", FALSE),
+        checkboxInput("native", "Apenas nativas", FALSE),
+        checkboxInput("accepted", "Apenas nomes aceitos", TRUE)
       ),
       actionButton("buscar", "Buscar", class = "btn-primary"),
 
@@ -218,6 +221,18 @@ server <- function(input, output, session) {
         d[0, , drop = FALSE]
       }
     )
+
+    if (!is.null(out) && nrow(out) > 0) {
+      if (input$endemic) {
+        out <- out[grepl("Endemic", out$Endemism, ignore.case = TRUE), , drop = FALSE]
+      }
+      if (input$native) {
+        out <- out[grepl("Native", out$Origin, ignore.case = TRUE), , drop = FALSE]
+      }
+      if (input$accepted) {
+        out <- out[grepl("Accepted", out$taxonomicStatus, ignore.case = TRUE), , drop = FALSE]
+      }
+    }
 
     busca$df  <- out
     busca$msg <- if (is.null(out) || nrow(out) == 0)
