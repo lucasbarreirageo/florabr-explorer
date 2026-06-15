@@ -224,10 +224,10 @@ server <- function(input, output, session) {
 
     if (!is.null(out) && nrow(out) > 0) {
       if (input$endemic) {
-        out <- out[grepl("Endemic", out$Endemism, ignore.case = TRUE), , drop = FALSE]
+        out <- out[grepl("Endemic", out$endemism, ignore.case = TRUE), , drop = FALSE]
       }
       if (input$native) {
-        out <- out[grepl("Native", out$Origin, ignore.case = TRUE), , drop = FALSE]
+        out <- out[grepl("Native", out$origin, ignore.case = TRUE), , drop = FALSE]
       }
       if (input$accepted) {
         out <- out[grepl("Accepted", out$taxonomicStatus, ignore.case = TRUE), , drop = FALSE]
@@ -293,10 +293,13 @@ server <- function(input, output, session) {
   ## Detalhe textual da especie
   output$detalhe <- renderText({
     req(input$especie_sel)
-    d <- bf()
-    linha <- d[d$species == input$especie_sel, , drop = FALSE]
-    if (nrow(linha) == 0) return("")
+    
+    linha <- busca$df[which(busca$df$species == input$especie_sel), , drop = FALSE]
+    
+    if (nrow(linha) == 0) return("Detalhes não encontrados.")
+    
     linha <- linha[1, , drop = FALSE]
+    
     paste0(
       "Especie: ",            val(linha, "species"), "\n",
       "Nome cientifico: ",    val(linha, "scientificName"), "\n",
@@ -304,11 +307,11 @@ server <- function(input, output, session) {
       "  |  Genero: ",        val(linha, "genus"), "\n",
       "Forma de vida: ",      val(linha, "lifeForm"),
       "  |  Habitat: ",       val(linha, "habitat"), "\n",
-      "Origem: ",             val(linha, "Origin"),
-      "  |  Endemismo: ",     val(linha, "Endemism"), "\n",
+      "Origem: ",             val(linha, "origin"),     
+      "  |  Endemismo: ",     val(linha, "endemism"),    
       "Status taxonomico: ",  val(linha, "taxonomicStatus"), "\n",
-      "Biomas: ",             val(linha, "Biome"), "\n",
-      "Estados: ",            val(linha, "States"), "\n",
+      "Biomas: ",             val(linha, "biome"),        
+      "Estados: ",            val(linha, "states"),       
       "Tipo de vegetacao: ",  val(linha, "vegetationType"), "\n",
       "Nome(s) popular(es): ",val(linha, "vernacularName")
     )
