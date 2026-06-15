@@ -14,10 +14,6 @@ Um aplicativo interativo construído em R (Shiny) para consultar e exportar dado
 * **Detalhes Taxonômicos:** Visualize sinônimos, biomas, formas de vida, endemismo e status de conservação.
 
 ## 🚀 Como usar (Direto do RStudio)
-
-Você não precisa baixar os arquivos manualmente. Basta abrir o seu R/RStudio e rodar o comando abaixo (certifique-se de ter o pacote `shiny` instalado):
-
-## 🚀 Como usar (Direto do RStudio)
 Qualquer pessoa com o R e o RStudio instalados pode executar esta aplicação diretamente do GitHub, sem precisar de descarregar os ficheiros manualmente. Basta correr o seguinte código no R:
 
 ```R
