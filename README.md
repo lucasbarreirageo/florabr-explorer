@@ -28,7 +28,7 @@ shiny::runGitHub(repo = "florabr-explorer", username = "lucasbarreirageo")
 ```
 ## Como Citar
 
-Se esta ferramenta foi útil para o seu fluxo de trabalho, pesquisa ou projeto de conservação, por favor, utilize uma das seguintes formatações para citação:
+Se por acaso achar que esta ferramenta foi útil para o seu fluxo de trabalho de alguma forma, por favor, utilize uma das seguintes formatações para citação:
 
 ### Padrão ABNT
 BARREIRA, A.L. florabr-explorer: Ferramenta computacional para acesso rápido e exportação de registros da Flora e Funga do Brasil. Versão 1.0. Rio de Janeiro: GitHub, 2026. Disponível em: <https://github.com/lucasbarreirageo/florabr-explorer>. Acesso em: [Inserir data de acesso].
