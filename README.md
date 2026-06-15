@@ -15,11 +15,11 @@ A plataforma [`Flora e Funga do Brasil`](https://reflora.jbrj.gov.br/reflora/lis
 Este aplicativo atua como uma interface gráfica construída sobre o pacote R [`florabr`](https://brunomc-oliveira.github.io/florabr/), desenvolvido por W. C. Trindade (2024). O pacote otimizou de forma significativa a maneira como pesquisadores interagem com as bases de dados do JBRJ no ambiente R, permitindo o download ágil, a filtragem e a manipulação de milhares de registros taxonômicos com extrema eficiência computacional.
 
 ## 📌 Funcionalidades
-* **Download e Gerenciamento da Base:** Baixe a versão mais recente dos dados diretamente do Jardim Botânico do Rio de Janeiro.
-* **Busca Flexível:** Consulte espécies, gêneros, famílias ou nomes populares.
-* **Filtros Avançados:** Opção de incluir subespécies e variedades.
+* **Download e Gerenciamento da base:** Baixe a versão mais recente dos dados diretamente do Jardim Botânico do Rio de Janeiro.
+* **Busca flexível:** Consulte espécies, gêneros, famílias ou nomes populares.
+* **Filtros avançados:** Opção de incluir subespécies e variedades.
 * **Exportação:** Salve os resultados em CSV diretamente no seu computador.
-* **Detalhes Taxonômicos:** Visualize sinônimos, biomas, formas de vida, endemismo e status de conservação.
+* **Detalhes taxonômicos:** Visualize sinônimos, biomas, formas de vida, endemismo e status de conservação.
 
 ## 🚀 Como usar (Direto do RStudio)
 Qualquer pessoa com o R e o RStudio instalados pode executar esta aplicação diretamente do GitHub, sem precisar de descarregar os ficheiros manualmente. Basta correr o seguinte código no R:
