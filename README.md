@@ -1,6 +1,11 @@
+<div align="center">
+  <img src="www/flora_chan.png" alt="Flora-chan Logo REFLORA" width="250">
+  
+  # florabr-explorer
+</div>
+
 # florabr-explorer
 Ferramenta computacional para acesso rápido e exportação de registros da Flora e Funga do Brasil (JBRJ), desenvolvida para otimizar fluxos de trabalho em pesquisa botânica e conservação.
-
 
 # Consulta à Flora e Funga do Brasil 🌿🍄
 

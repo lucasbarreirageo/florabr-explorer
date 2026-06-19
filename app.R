@@ -46,6 +46,10 @@ ui <- fluidPage(
     sidebarPanel(
       width = 4,
 
+      tags$div(style = "text-align: center; margin-bottom: 20px;",
+        tags$img(src = "flora_chan.png", style = "max-width: 80%; height: auto;")
+      ),
+
       tags$h4("1) Configuracao"),
       textInput("data_dir", "Pasta dos dados (onde a base sera salva/lida):",
                 value = pasta_dados_padrao),
