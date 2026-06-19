@@ -74,9 +74,6 @@ Após filtrar os dados de interesse, você possui duas opções para exportar a 
 ## Como citar
 
 Se por acaso achar que esta ferramenta foi útil para o seu fluxo de trabalho de alguma forma, por favor, utilize uma das seguintes formatações para citação:
+Cite a Flora do Brasil  ;)
 
-### Padrão ABNT
-BARREIRA, A.L. florabr-explorer: Ferramenta computacional para acesso rápido e exportação de registros da Flora e Funga do Brasil. Versão 1.0. Rio de Janeiro: GitHub, 2026. Disponível em: <https://github.com/lucasbarreirageo/florabr-explorer>. Acesso em: [Inserir data de acesso].
 
-### Padrão APA
-Barreira, A.L. (2026). florabr-explorer: Ferramenta computacional para acesso rápido e exportação de registros da Flora e Funga do Brasil (Version 1.0) [Computer software]. GitHub. https://github.com/lucasbarreirageo/florabr-explorer
